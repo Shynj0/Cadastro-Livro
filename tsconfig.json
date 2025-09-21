@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    // Pastas de entrada e saída
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // Módulos e versão de JS
+    "module": "ESNext",
+    "target": "ES2020",
+    "moduleResolution": "Node",
+
+    // Tipos
+    "types": ["node"],
+
+    // Outros outputs
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Regras de checagem mais seguras
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "strict": true,
+
+    // React (se precisar no front)
+    "jsx": "react-jsx",
+
+    // Interop com módulos comuns
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  }
+}

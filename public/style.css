@@ -1,0 +1,109 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fffaf0; /* Um fundo branco com um leve tom alaranjado/creme */
+    color: #333;
+    line-height: 1.6;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    color: #d95f02; /* Laranja mais escuro para os títulos */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Formulário de Cadastro */
+#formLivro {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+#formLivro input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+    font-size: 16px;
+}
+
+#formLivro input:focus {
+    outline: none;
+    border-color: #fb8500; /* Destaque laranja ao focar no input */
+}
+
+#formLivro button {
+    width: 100%;
+    padding: 12px;
+    background-color: #fb8500; /* Laranja vibrante para o botão principal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#formLivro button:hover {
+    background-color: #e67700; /* Tom mais escuro de laranja para o efeito hover */
+}
+
+/* Lista de Livros Cadastrados */
+.livros {
+    width: 100%;
+    max-width: 700px;
+}
+
+.livro-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-left: 5px solid #fb8500; /* Destaque laranja à esquerda */
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os botões quebrem a linha em telas menores */
+}
+
+.livro-item strong {
+    color: #d95f02; /* Título do livro em laranja escuro */
+    font-size: 1.1em;
+}
+
+/* Botões de Ação na Lista */
+.btn-editar, .btn-excluir {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.btn-editar {
+    background-color: #fca311; /* Laranja mais claro para o botão de editar */
+}
+
+.btn-excluir {
+    background-color: #e63946; /* Um tom de vermelho para a ação de excluir, contrastando com o laranja */
+}
+
+.btn-editar:hover, .btn-excluir:hover {
+    opacity: 0.85; /* Leve transparência no hover */
+}
